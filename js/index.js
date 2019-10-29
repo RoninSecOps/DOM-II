@@ -31,3 +31,11 @@ destoImg.addEventListener('mouseover', function() {
 destoImg.addEventListener('mouseout', function() {
   destoImg.style.border = '';
 });
+
+const img = document.querySelectorAll('img');
+console.log(img);
+img.forEach(function(cV) {
+  cV.addEventListener('mouseover', function() {
+    cV.style.transform = 'rotate(7deg)';
+  });
+});
