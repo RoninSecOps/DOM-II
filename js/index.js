@@ -50,3 +50,9 @@ img.forEach(function(cV) {
     cV.style.transition = 'all 2s';
   });
 });
+
+const body = document.querySelector('body');
+document.body.addEventListener('mousemove', function(e) {
+  document.body.style.backgroundColor =
+    'rgb(' + e.offsetX + ',' + e.offsetY + ', 40)';
+});
