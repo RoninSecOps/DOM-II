@@ -23,3 +23,11 @@ const letsGo = document.querySelector('.intro h2');
 letsGo.addEventListener('dblclick', function() {
   letsGo.style.background = 'crimson';
 });
+
+const destoImg = document.getElementById('desto');
+destoImg.addEventListener('mouseover', function() {
+  destoImg.style.border = 'thick dashed crimson';
+});
+destoImg.addEventListener('mouseout', function() {
+  destoImg.style.border = '';
+});
