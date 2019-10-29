@@ -45,3 +45,8 @@ img.forEach(function(cV) {
     cV.style.transform = '';
   });
 });
+img.forEach(function(cV) {
+  cV.addEventListener('mouseover', function() {
+    cV.style.transition = 'all 2s';
+  });
+});
