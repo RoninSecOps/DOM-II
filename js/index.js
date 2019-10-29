@@ -11,3 +11,10 @@ navMenu.forEach(function(cV) {
     e.preventDefault();
   });
 });
+
+navMenu.forEach(function(cV) {
+    cV.addEventListener('dblclick', function(e) {
+      cV.style.color = '';
+      e.preventDefault();
+    });
+  });
