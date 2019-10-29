@@ -39,3 +39,9 @@ img.forEach(function(cV) {
     cV.style.transform = 'rotate(7deg)';
   });
 });
+
+img.forEach(function(cV) {
+  cV.addEventListener('mouseout', function() {
+    cV.style.transform = '';
+  });
+});
