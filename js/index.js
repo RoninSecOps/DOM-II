@@ -13,8 +13,13 @@ navMenu.forEach(function(cV) {
 });
 
 navMenu.forEach(function(cV) {
-    cV.addEventListener('dblclick', function(e) {
-      cV.style.color = '';
-      e.preventDefault();
-    });
+  cV.addEventListener('dblclick', function(e) {
+    cV.style.color = '';
+    e.preventDefault();
   });
+});
+
+const letsGo = document.querySelector('.intro h2');
+letsGo.addEventListener('dblclick', function() {
+  letsGo.style.background = 'crimson';
+});
